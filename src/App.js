@@ -19,8 +19,8 @@ const sections = [
   { label: 'About', Component: AboutSection, icon: <HomeIcon /> },
   { label: 'Skills', Component: SkillsSection, icon: <HandymanIcon /> },
   { label: 'Education', Component: EducationSection, icon: <SchoolIcon /> },
-  { label: 'Experience', Component: ExperienceSection, icon: <BusinessIcon /> },
   { label: 'Projects', Component: ProjectsSection, icon: <WebIcon /> },
+  { label: 'Experience', Component: ExperienceSection, icon: <BusinessIcon /> },
 ];
 
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
       <Container id="sections-container">
         {sections.map((section) => (
           <section key={section.label} id={section.label}>
-            <section.Component />
+            <section.Component label={section.label} />
           </section>
         ))}
       </Container>
