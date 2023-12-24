@@ -1,11 +1,13 @@
-import { Box, Link, Stack, Typography } from '@mui/material';
+import { Link, Stack, Typography } from '@mui/material';
 
 export default function AboutSection() {
   return (
-    <Box>
-      <Stack direction={'row'}>
-        <Typography variant="h3">Luis Delamora</Typography>
-        <Typography variant="subtitle2">
+    <>
+      <Stack direction={'row'} spacing={2}>
+        <Typography variant="h3" flex={1}>
+          Luis Delamora
+        </Typography>
+        <Typography variant="subtitle2" alignSelf={'end'}>
           <Link href="https://linkedin.com/in/luis-delamora">LinkedIn</Link> |{' '}
           <Link href="https://github.com/eccos">GitHub</Link> |{' '}
           <Link href="https://codepen.io/eccos">CodePen</Link>
@@ -21,6 +23,6 @@ export default function AboutSection() {
         Constantly self-improving by absorbing the latest software technology
         and techniques.
       </Typography>
-    </Box>
+    </>
   );
 }
