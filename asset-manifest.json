@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cfab248e.css",
-    "main.js": "/portfolio/static/js/main.a49263f1.js",
+    "main.js": "/portfolio/static/js/main.12fa367c.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/Simple News App.jpeg": "/portfolio/static/media/Simple News App.76c865146e90da5608d5.jpeg",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.pdf": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.578c659c4903f907c766.pdf",
@@ -57,6 +57,7 @@
     "static/media/roboto-greek-400-normal.woff": "/portfolio/static/media/roboto-greek-400-normal.dfdff8fa12eac629d29f.woff",
     "static/media/roboto-greek-500-normal.woff": "/portfolio/static/media/roboto-greek-500-normal.1a05a4887ccb810cb4dd.woff",
     "static/media/roboto-greek-700-normal.woff": "/portfolio/static/media/roboto-greek-700-normal.a84892c56152037b3552.woff",
+    "static/media/logo-github.svg": "/portfolio/static/media/logo-github.3ea142bf2c0035ce05ec7333a8657ea0.svg",
     "static/media/roboto-vietnamese-500-normal.woff2": "/portfolio/static/media/roboto-vietnamese-500-normal.d8642a3d1d4ef6179644.woff2",
     "static/media/roboto-vietnamese-400-normal.woff2": "/portfolio/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
     "static/media/roboto-vietnamese-700-normal.woff2": "/portfolio/static/media/roboto-vietnamese-700-normal.3425a701027d0699e369.woff2",
@@ -75,11 +76,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio/index.html",
     "main.cfab248e.css.map": "/portfolio/static/css/main.cfab248e.css.map",
-    "main.a49263f1.js.map": "/portfolio/static/js/main.a49263f1.js.map",
+    "main.12fa367c.js.map": "/portfolio/static/js/main.12fa367c.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfab248e.css",
-    "static/js/main.a49263f1.js"
+    "static/js/main.12fa367c.js"
   ]
 }
