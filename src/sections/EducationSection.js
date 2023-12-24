@@ -1,12 +1,13 @@
-import { Link, Stack, Typography } from '@mui/material';
+import { Link, Stack } from '@mui/material';
 import { CERTS } from '../app/shared/CERTS';
+import SectionHeader from '../components/SectionHeader';
 
 export default function EducationSection({ label }) {
   const certs = CERTS;
 
   return (
     <>
-      <Typography variant="h4">{label}</Typography>
+      <SectionHeader>{label}</SectionHeader>
       <Stack direction="row" spacing={2} overflow={'auto'}>
         {certs.map((cert) => (
           <Link key={cert.img} href={cert.pdf} target="_blank">

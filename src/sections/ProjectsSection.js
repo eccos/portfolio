@@ -1,20 +1,25 @@
 import {
-  Typography,
   Card,
   CardActionArea,
-  CardMedia,
   CardContent,
+  CardMedia,
+  Typography,
 } from '@mui/material';
 import { PROJECTS } from '../app/shared/PROJECTS';
+import SectionHeader from '../components/SectionHeader';
 
 export default function ProjectsSection({ label }) {
   const projects = PROJECTS;
 
   return (
     <>
-      <Typography variant="h4">{label}</Typography>
+      <SectionHeader>{label}</SectionHeader>
       {projects.map((project) => (
-        <Card key={project.id} sx={{ maxWidth: 345 }}>
+        <Card
+          key={project.id}
+          sx={{ maxWidth: 345, marginBottom: 1 }}
+          variant="outlined"
+        >
           <CardActionArea href={project.githubUrl}>
             <CardMedia
               component="img"

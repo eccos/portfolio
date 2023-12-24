@@ -6,6 +6,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
+import SectionHeader from '../components/SectionHeader';
 
 function CircularProgressWithLabel(props) {
   return (
@@ -83,7 +84,7 @@ const skills = [
 export default function SkillsSection({ label }) {
   return (
     <>
-      <Typography variant="h4">{label}</Typography>
+      <SectionHeader>{label}</SectionHeader>
       {skills.map((skill) => (
         <Card sx={{ minWidth: 275 }} variant="outlined">
           <CardContent>
