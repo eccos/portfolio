@@ -1,4 +1,11 @@
-import { Box, CircularProgress, Typography } from '@mui/material';
+import {
+  Box,
+  Card,
+  CardContent,
+  CircularProgress,
+  Stack,
+  Typography,
+} from '@mui/material';
 
 function CircularProgressWithLabel(props) {
   return (
@@ -24,20 +31,77 @@ function CircularProgressWithLabel(props) {
   );
 }
 
-export default function SkillsSection() {
+const skills = [
+  {
+    name: 'Front-End',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    experience: 80,
+  },
+  {
+    name: 'Back-End',
+    technologies: ['Node.js', 'ColdFusion', 'PHP', 'JSP', 'Java', 'C# .NET'],
+    experience: 60,
+  },
+  {
+    name: 'Frameworks & Libraries',
+    technologies: [
+      'React.js',
+      'React Native',
+      'Bootstrap/Reactstrap',
+      'React Router',
+      'Redux.js',
+      'Formik',
+      'jQuery',
+    ],
+    experience: 60,
+  },
+  {
+    name: 'Supporting Tech',
+    technologies: [
+      'Google Firebase',
+      'SQL',
+      'GIT/GitHub',
+      'Async API Calls (XML/JSON)',
+      'AJAX',
+    ],
+    experience: 80,
+  },
+  {
+    name: 'Tools and Utilities',
+    technologies: ['NPM', 'Jira', 'Jenkins', 'Postman', 'Windows/Unix CLI'],
+    experience: 90,
+  },
+  {
+    name: 'Testing Automation',
+    technologies: [
+      'Certified Tricentis Tosca Engineer Test Design and Automation Specialist (Nov 2021)',
+    ],
+    experience: 80,
+  },
+];
+
+export default function SkillsSection({ label }) {
   return (
     <>
-      Skills Front-end:{' '}
-      <CircularProgressWithLabel variant="determinate" value={80} />
-      Back-end: <CircularProgressWithLabel variant="determinate" value={60} />
-      {`Frontend: JavaScript, HTML, CSS
-Frameworks & Libraries: React.js, React Native, Bootstrap/Reactstrap, React Router, Redux.js, Formik, jQuery
-Backend: Node.js, ColdFusion, PHP, JSP, Java, C# .NET
-Supporting Tech: Google Firebase, SQL, GIT/GitHub, Async API Calls (XML/JSON), AJAX
-Tools and Utilities: NPM, Jira, Jenkins, Postman, Windows/Unix CLI
-Code Editors: Visual Studio, VS Code, Eclipse
-Testing Automation: Certified Tricentis Tosca Engineer Test Design and Automation Specialist (Nov 2021)
-`}
+      <Typography variant="h4">{label}</Typography>
+      {skills.map((skill) => (
+        <Card sx={{ minWidth: 275 }} variant="outlined">
+          <CardContent>
+            <Stack direction={'row'} alignItems={'center'} spacing={2}>
+              <CircularProgressWithLabel
+                variant="determinate"
+                value={skill.experience}
+              />
+              <Typography variant="h5" component="div">
+                {skill.name}
+              </Typography>
+            </Stack>
+            <Typography sx={{ mt: 2 }} color="text.secondary">
+              {skill.technologies.join(', ')}
+            </Typography>
+          </CardContent>
+        </Card>
+      ))}
     </>
   );
 }
