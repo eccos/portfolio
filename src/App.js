@@ -13,7 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import WebIcon from '@mui/icons-material/Web';
 
-import { useMediaQuery, useTheme } from '@mui/material';
+import { Container, useMediaQuery, useTheme } from '@mui/material';
 
 const sections = [
   { label: 'About', Component: AboutSection, icon: <HomeIcon /> },
@@ -30,13 +30,13 @@ export default function App() {
   return (
     <>
       {!isSmallScreen && <FixedTopNav sections={sections} />}
-      <div id="sections-container">
+      <Container id="sections-container">
         {sections.map((section) => (
           <section key={section.label} id={section.label}>
             <section.Component />
           </section>
         ))}
-      </div>
+      </Container>
       {isSmallScreen && <FixedBottomNavigation sections={sections} />}
     </>
   );
