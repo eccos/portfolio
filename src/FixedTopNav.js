@@ -7,7 +7,7 @@ function FixedTopNav({ sections }) {
 
   return (
     <AppBar id="top-nav-container" position="sticky" sx={{ top: 0 }}>
-      <Toolbar>
+      <Toolbar sx={{ justifyContent: 'center' }}>
         <Tabs value={value} onChange={(_, val) => setValue(val)} centered>
           {sections.map((section) => (
             <Tab
