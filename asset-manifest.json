@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cfab248e.css",
-    "main.js": "/portfolio/static/js/main.8162419f.js",
+    "main.js": "/portfolio/static/js/main.a49263f1.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/Simple News App.jpeg": "/portfolio/static/media/Simple News App.76c865146e90da5608d5.jpeg",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.pdf": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.578c659c4903f907c766.pdf",
@@ -75,11 +75,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio/index.html",
     "main.cfab248e.css.map": "/portfolio/static/css/main.cfab248e.css.map",
-    "main.8162419f.js.map": "/portfolio/static/js/main.8162419f.js.map",
+    "main.a49263f1.js.map": "/portfolio/static/js/main.a49263f1.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfab248e.css",
-    "static/js/main.8162419f.js"
+    "static/js/main.a49263f1.js"
   ]
 }
