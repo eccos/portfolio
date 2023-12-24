@@ -1,4 +1,6 @@
 import { Link, Stack, Typography, useTheme } from '@mui/material';
+import LinkedInLogo from '../app/assets/img/techLogos/logo-linkedin.png';
+import GitHubLogo from '../app/assets/img/techLogos/logo-github.svg';
 
 export default function AboutSection() {
   const theme = useTheme();
@@ -16,8 +18,12 @@ export default function AboutSection() {
           Luis Delamora
         </Typography>
         <Typography variant="subtitle2" alignSelf={'end'}>
-          <Link href="https://linkedin.com/in/luis-delamora">LinkedIn</Link> |{' '}
-          <Link href="https://github.com/eccos">GitHub</Link>
+          <Link href="https://linkedin.com/in/luis-delamora">
+            <img src={LinkedInLogo} width={25} height={25} />
+          </Link>
+          <Link href="https://github.com/eccos">
+            <img src={GitHubLogo} width={25} height={25} />
+          </Link>
         </Typography>
       </Stack>
       <Typography variant="overline" color={theme.palette.primary.main}>
