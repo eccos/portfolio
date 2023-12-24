@@ -8,7 +8,13 @@ function FixedTopNav({ sections }) {
   return (
     <AppBar id="top-nav-container" position="sticky" sx={{ top: 0 }}>
       <Toolbar sx={{ justifyContent: 'center' }}>
-        <Tabs value={value} onChange={(_, val) => setValue(val)} centered>
+        <Tabs
+          value={value}
+          onChange={(_, val) => setValue(val)}
+          centered
+          textColor={'white'}
+          indicatorColor={'secondary'}
+        >
           {sections.map((section) => (
             <Tab
               key={section.label}
