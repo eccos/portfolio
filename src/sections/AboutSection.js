@@ -1,13 +1,14 @@
 import { Link, Stack, Typography, useTheme } from '@mui/material';
-import LinkedInLogo from '../app/assets/img/techLogos/logo-linkedin.png';
+
 import GitHubLogo from '../app/assets/img/techLogos/logo-github.svg';
+import LinkedInLogo from '../app/assets/img/techLogos/logo-linkedin.png';
 
 export default function AboutSection() {
   const theme = useTheme();
 
   return (
     <>
-      <Stack direction={'row'} spacing={2}>
+      <Stack direction={'row'} spacing={2} marginTop={5}>
         <Typography
           variant="h3"
           flex={1}
@@ -17,14 +18,14 @@ export default function AboutSection() {
         >
           Luis Delamora
         </Typography>
-        <Typography variant="subtitle2" alignSelf={'end'}>
+        <Stack alignSelf={'end'}>
           <Link href="https://linkedin.com/in/luis-delamora">
-            <img src={LinkedInLogo} width={25} height={25} />
+            <img src={LinkedInLogo} width={38} height={38} />
           </Link>
           <Link href="https://github.com/eccos">
-            <img src={GitHubLogo} width={25} height={25} />
+            <img src={GitHubLogo} width={38} height={38} />
           </Link>
-        </Typography>
+        </Stack>
       </Stack>
       <Typography variant="overline" color={theme.palette.primary.main}>
         Full Stack Web Developer
