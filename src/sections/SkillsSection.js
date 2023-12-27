@@ -77,6 +77,7 @@ const skills = [
       { name: 'React.js', icon: <ReactIcon /> },
       { name: 'React Native', icon: <ReactNativeIcon /> },
       { name: 'Bootstrap/Reactstrap', icon: <BootstrapIcon /> },
+      { name: 'MUI (Material UI)', icon: null },
       { name: 'React Router', icon: null },
       { name: 'Redux.js', icon: null },
       { name: 'Formik', icon: null },
