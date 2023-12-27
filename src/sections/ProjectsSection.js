@@ -21,7 +21,7 @@ export default function ProjectsSection({ label }) {
         {projects.map((project) => (
           <Grid key={project.id} item xs="12" sm="6" lg="4">
             <Card sx={{ minWidth: 275, height: '100%' }} variant="outlined">
-              <CardActionArea href={project.githubUrl}>
+              <CardActionArea href={project.githubUrl} sx={{ height: '100%' }}>
                 <CardMedia
                   component="img"
                   image={project.img}
