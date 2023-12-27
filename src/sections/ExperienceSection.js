@@ -1,11 +1,53 @@
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineOppositeContent,
+  TimelineSeparator,
+} from '@mui/lab';
 import SectionHeader from '../components/SectionHeader';
 
 export default function ExperienceSection({ label }) {
   return (
     <>
       <SectionHeader>{label}</SectionHeader>
-      {`Test Automation Engineer | Cayuse Commercial Services | Nov 2021 – July
-      2023 Developed exhaustive end-to-end automated test scripts leveraging
+      <Timeline>
+        {employmentData.map((data, i) => (
+          <TimelineItem key={i}>
+            <TimelineOppositeContent>
+              {data.dateStart} - {data.dateEnd} 📅
+              <br />
+              {data.position} 💻
+              <br />
+              {data.employer} 🏢
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot
+                variant="outlined"
+                color={i % 2 === 0 ? 'primary' : 'secondary'}
+              />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent color="text.secondary">
+              🛠 {data.skills.join(', ')}
+            </TimelineContent>
+          </TimelineItem>
+        ))}
+      </Timeline>
+    </>
+  );
+}
+
+const employmentData = [
+  {
+    position: `Test Automation Engineer`,
+    employer: `Cayuse Commercial Services`,
+    dateStart: `Nov 2021`,
+    dateEnd: `Jul 2023`,
+    skills: ['Tricentis Tosca', 'Powershell', 'GE ADMS', 'Test Automation'],
+    summary: `Developed exhaustive end-to-end automated test scripts leveraging
       Tosca for a large utility company’s power grid management system involving
       complex logic. Engineered reusable modules for critical business paths to
       increase scalability of test cases and reduce manual testing efforts >70%.
@@ -13,8 +55,32 @@ export default function ExperienceSection({ label }) {
       PowerShell scripts which opened 20% of previously blocked test cases.
       Commanded a lead role when one was missing. Became a bridge between
       multiple teams and guided my team on expectations and obtained answers to
-      questions and discrepancies. Web Dev & Manual Tester | Cayuse Commercial
-      Services | May 2015 – Nov 2021 Fulfilled many roles at a giant telecom
+      questions and discrepancies.`,
+  },
+  {
+    position: `Web Dev & Manual Tester`,
+    employer: `Cayuse Commercial Services`,
+    dateStart: `May 2015`,
+    dateEnd: `Nov 2021`,
+    skills: [
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'SQL',
+      'Adobe ColdFusion',
+      'JSP',
+      'Async API Calls (XML/JSON)',
+      'AJAX',
+      'Postman',
+      'GitHub',
+      'Git',
+      'Jenkins',
+      'Bootstrap',
+      'jQuery',
+      'DataTables',
+      'Windows/Unix CLI',
+    ],
+    summary: `Fulfilled many roles at a giant telecom
       company with various accomplishments. Web Dev Project #1: Maintained and
       improved a web application to rapidly accelerate IVR (Interactive Voice
       Response) testing by providing a GUI for database operations, calculating
@@ -31,12 +97,23 @@ export default function ExperienceSection({ label }) {
       knowledge transfer documentation, and reports. Utilized Postman to build
       and send requests to 3rd party APIs to verify responses according to
       technical documentation. Set up 3rd party API simulators on servers when
-      3rd party APIs were not available. MOBILE APP TESTER | CAYUSE COMMERCIAL
-      SERVICES | DEC 2013 – APRIL 2015 Verified banking app specifications at a
+      3rd party APIs were not available.`,
+  },
+  {
+    position: `Mobile App Tester`,
+    employer: `Cayuse Commercial Services`,
+    dateStart: `Dec 2013`,
+    dateEnd: `Apr 2015`,
+    skills: [
+      'Defect Life Cycle',
+      'Technical Documentation',
+      'Test Plan Creation',
+      'Reporting',
+    ],
+    summary: `Verified banking app specifications at a
       large Finance and Banking Institution. Processed user stories &
       requirements to create test cases using the Gherkin syntax. Tested
       functionality, look & feel, and content on Android and iOS devices of
-      varying versions and sizes on both physical and emulated devices. `}
-    </>
-  );
-}
+      varying versions and sizes on both physical and emulated devices.`,
+  },
+];
