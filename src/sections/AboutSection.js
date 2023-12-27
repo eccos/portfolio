@@ -20,10 +20,15 @@ export default function AboutSection() {
         </Typography>
         <Stack alignSelf={'end'}>
           <Link href="https://linkedin.com/in/luis-delamora">
-            <img src={LinkedInLogo} width={38} height={38} />
+            <img
+              src={LinkedInLogo}
+              width={38}
+              height={38}
+              alt="LinkedIn Logo"
+            />
           </Link>
           <Link href="https://github.com/eccos">
-            <img src={GitHubLogo} width={38} height={38} />
+            <img src={GitHubLogo} width={38} height={38} alt="GitHub Logo" />
           </Link>
         </Stack>
       </Stack>
