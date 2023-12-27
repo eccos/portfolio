@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cfab248e.css",
-    "main.js": "/portfolio/static/js/main.12fa367c.js",
+    "main.js": "/portfolio/static/js/main.810a1d68.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/Simple News App.jpeg": "/portfolio/static/media/Simple News App.76c865146e90da5608d5.jpeg",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.pdf": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.578c659c4903f907c766.pdf",
@@ -29,6 +29,7 @@
     "static/media/roboto-latin-500-normal.woff": "/portfolio/static/media/roboto-latin-500-normal.1f075502d0094a398e21.woff",
     "static/media/roboto-latin-700-normal.woff": "/portfolio/static/media/roboto-latin-700-normal.666d7a2f9db53cf52e2d.woff",
     "static/media/roboto-latin-400-normal.woff": "/portfolio/static/media/roboto-latin-400-normal.3f2b9a42f643e62a49b7.woff",
+    "static/media/logo-nodejs-square.svg": "/portfolio/static/media/logo-nodejs-square.6056a014318ff8c0101026849abaf80f.svg",
     "static/media/roboto-cyrillic-ext-300-normal.woff": "/portfolio/static/media/roboto-cyrillic-ext-300-normal.3503ec5cc6330e21f695.woff",
     "static/media/roboto-cyrillic-ext-400-normal.woff": "/portfolio/static/media/roboto-cyrillic-ext-400-normal.af4d91666ea345601bea.woff",
     "static/media/roboto-cyrillic-ext-500-normal.woff": "/portfolio/static/media/roboto-cyrillic-ext-500-normal.268f264f58eba5c07c88.woff",
@@ -47,6 +48,7 @@
     "static/media/roboto-cyrillic-300-normal.woff2": "/portfolio/static/media/roboto-cyrillic-300-normal.1431d1cef06ad04f5458.woff2",
     "static/media/roboto-cyrillic-500-normal.woff": "/portfolio/static/media/roboto-cyrillic-500-normal.965aebef74db72eaf236.woff",
     "static/media/roboto-cyrillic-700-normal.woff": "/portfolio/static/media/roboto-cyrillic-700-normal.f8a034d72aa6828199d4.woff",
+    "static/media/logo-js.svg": "/portfolio/static/media/logo-js.d058cb7f4e323ca04bd98f8d5aad442e.svg",
     "static/media/roboto-cyrillic-300-normal.woff": "/portfolio/static/media/roboto-cyrillic-300-normal.5b5f2f31962967dfc22c.woff",
     "static/media/roboto-cyrillic-400-normal.woff": "/portfolio/static/media/roboto-cyrillic-400-normal.c1d66054fe23e181d92c.woff",
     "static/media/roboto-greek-300-normal.woff2": "/portfolio/static/media/roboto-greek-300-normal.db2632771401f61463fe.woff2",
@@ -57,15 +59,21 @@
     "static/media/roboto-greek-400-normal.woff": "/portfolio/static/media/roboto-greek-400-normal.dfdff8fa12eac629d29f.woff",
     "static/media/roboto-greek-500-normal.woff": "/portfolio/static/media/roboto-greek-500-normal.1a05a4887ccb810cb4dd.woff",
     "static/media/roboto-greek-700-normal.woff": "/portfolio/static/media/roboto-greek-700-normal.a84892c56152037b3552.woff",
+    "static/media/logo-react-native.svg": "/portfolio/static/media/logo-react-native.84669527b4f92c89ccccd979e88d263f.svg",
     "static/media/logo-github.svg": "/portfolio/static/media/logo-github.3ea142bf2c0035ce05ec7333a8657ea0.svg",
     "static/media/roboto-vietnamese-500-normal.woff2": "/portfolio/static/media/roboto-vietnamese-500-normal.d8642a3d1d4ef6179644.woff2",
     "static/media/roboto-vietnamese-400-normal.woff2": "/portfolio/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
     "static/media/roboto-vietnamese-700-normal.woff2": "/portfolio/static/media/roboto-vietnamese-700-normal.3425a701027d0699e369.woff2",
     "static/media/roboto-vietnamese-300-normal.woff2": "/portfolio/static/media/roboto-vietnamese-300-normal.32fc45a3d1e8ea11fabc.woff2",
+    "static/media/logo-react.svg": "/portfolio/static/media/logo-react.96260f10cab4d9da1991f3bbf0a1bd20.svg",
     "static/media/roboto-vietnamese-300-normal.woff": "/portfolio/static/media/roboto-vietnamese-300-normal.8472d69545c7409091b4.woff",
     "static/media/roboto-vietnamese-400-normal.woff": "/portfolio/static/media/roboto-vietnamese-400-normal.e0e8ba725ebd107367a8.woff",
     "static/media/roboto-vietnamese-500-normal.woff": "/portfolio/static/media/roboto-vietnamese-500-normal.657896dad292ee9a0a0a.woff",
     "static/media/roboto-vietnamese-700-normal.woff": "/portfolio/static/media/roboto-vietnamese-700-normal.4df79f684fcbca8386bd.woff",
+    "static/media/logo-visual-studio-code.svg": "/portfolio/static/media/logo-visual-studio-code.a4b8e5c0551f3ad73ecb8c1e4f87afe0.svg",
+    "static/media/logo-css3.svg": "/portfolio/static/media/logo-css3.c9526850c1c838a2726c8be3a5350ede.svg",
+    "static/media/logo-mongodb-leaf.svg": "/portfolio/static/media/logo-mongodb-leaf.975086bf61a7b258bd13a319c682b036.svg",
+    "static/media/google-cloud-icon.svg": "/portfolio/static/media/google-cloud-icon.b61cc2495ce755b253c8a08cffbf353c.svg",
     "static/media/roboto-greek-ext-500-normal.woff2": "/portfolio/static/media/roboto-greek-ext-500-normal.6fb9cffb1d3e72bf9293.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/portfolio/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "static/media/roboto-greek-ext-300-normal.woff2": "/portfolio/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
@@ -74,13 +82,15 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/portfolio/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/portfolio/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
+    "static/media/logo-bootstrap.svg": "/portfolio/static/media/logo-bootstrap.48565baa4c3a44417a6798093c5a85e7.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/logo-html5.svg": "/portfolio/static/media/logo-html5.cf51b3879972e0e8c0c9be2135162847.svg",
     "main.cfab248e.css.map": "/portfolio/static/css/main.cfab248e.css.map",
-    "main.12fa367c.js.map": "/portfolio/static/js/main.12fa367c.js.map",
+    "main.810a1d68.js.map": "/portfolio/static/js/main.810a1d68.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfab248e.css",
-    "static/js/main.12fa367c.js"
+    "static/js/main.810a1d68.js"
   ]
 }
