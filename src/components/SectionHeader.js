@@ -4,7 +4,14 @@ export default function SectionHeader({ children }) {
   const theme = useTheme();
 
   return (
-    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        marginTop: 6,
+        marginBottom: 3,
+      }}
+    >
       <Box
         sx={{
           width: '10%',
