@@ -19,12 +19,11 @@ export default function ProjectsSection({ label }) {
       <SectionHeader>{label}</SectionHeader>
       <Grid container spacing={2}>
         {projects.map((project) => (
-          <Grid item key={project.id}>
-            <Card sx={{ maxWidth: 300 }} variant="outlined">
+          <Grid key={project.id} item xs="12" sm="6" lg="4">
+            <Card sx={{ minWidth: 275, height: '100%' }} variant="outlined">
               <CardActionArea href={project.githubUrl}>
                 <CardMedia
                   component="img"
-                  height="140"
                   image={project.img}
                   alt={project.title}
                 />
