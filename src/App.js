@@ -13,7 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import WebIcon from '@mui/icons-material/Web';
 
-import { Container, useMediaQuery, useTheme, Paper } from '@mui/material';
+import { Container, useMediaQuery, useTheme } from '@mui/material';
 
 const sections = [
   { label: 'About', Component: AboutSection, icon: <HomeIcon /> },
@@ -33,14 +33,7 @@ export default function App() {
       <Container id="sections-container">
         {sections.map((section, i) => (
           <section key={section.label} id={section.label}>
-            <Paper
-              elevation={i % 2 !== 0 && 3}
-              sx={{
-                padding: 2,
-              }}
-            >
-              <section.Component label={section.label} />
-            </Paper>
+            <section.Component label={section.label} />
           </section>
         ))}
       </Container>
