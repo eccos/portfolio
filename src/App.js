@@ -30,7 +30,7 @@ export default function App() {
   return (
     <>
       {!isSmallScreen && <FixedTopNav sections={sections} />}
-      <Container id="sections-container">
+      <Container id="sections-container" sx={{ my: 5 }}>
         {sections.map((section, i) => (
           <section key={section.label} id={section.label}>
             <section.Component label={section.label} />
