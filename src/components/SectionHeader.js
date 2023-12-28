@@ -6,24 +6,26 @@ export default function SectionHeader({ children }) {
       sx={{
         display: 'flex',
         alignItems: 'center',
-        marginTop: 6,
         marginBottom: 3,
       }}
     >
       <Box
         sx={{
           width: '10%',
-          height: '1px',
+          height: 10,
           bgcolor: 'secondary.main',
         }}
       ></Box>
-      <Typography variant="h4" sx={{ mx: 2, color: 'primary.main' }}>
+      <Typography
+        variant="h4"
+        sx={{ marginLeft: 2, marginRight: 2, color: 'primary.main' }}
+      >
         {children}
       </Typography>
       <Box
         sx={{
           width: '90%',
-          height: '1px',
+          height: 10,
           bgcolor: 'secondary.main',
         }}
       ></Box>
