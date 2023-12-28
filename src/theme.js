@@ -1,14 +1,10 @@
-import { red } from '@mui/material/colors';
+import { deepOrange, lightBlue, red } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: '#c77b0c',
-    },
-    secondary: {
-      main: '#0c57c7',
-    },
+    primary: deepOrange,
+    secondary: lightBlue,
     error: {
       main: red.A400,
     },
