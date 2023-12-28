@@ -22,7 +22,6 @@ export default function ProjectsSection({ label }) {
             <Card
               variant="outlined"
               sx={{
-                minWidth: 275,
                 height: '100%',
                 borderColor: 'secondary.main',
               }}
