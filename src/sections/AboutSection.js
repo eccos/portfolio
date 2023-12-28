@@ -1,20 +1,20 @@
-import { Link, Stack, Typography, useTheme } from '@mui/material';
+import { Link, Stack, Typography } from '@mui/material';
 
 import GitHubLogo from '../app/assets/img/techLogos/logo-github.svg';
 import LinkedInLogo from '../app/assets/img/techLogos/logo-linkedin.png';
 
 export default function AboutSection() {
-  const theme = useTheme();
-
   return (
     <>
-      <Stack direction={'row'} spacing={2} marginTop={5}>
+      <Stack direction={'row'} spacing={2} mt={5}>
         <Typography
           variant="h3"
-          flex={1}
-          borderBottom={1}
-          borderColor={theme.palette.secondary.main}
-          color={theme.palette.primary.main}
+          sx={{
+            alignSelf: 'end',
+            color: 'primary.main',
+            borderBottom: 1,
+            borderColor: 'secondary.main',
+          }}
         >
           Luis Delamora
         </Typography>
@@ -32,7 +32,7 @@ export default function AboutSection() {
           </Link>
         </Stack>
       </Stack>
-      <Typography variant="overline" color={theme.palette.primary.main}>
+      <Typography variant="overline" sx={{ color: 'secondary.main' }}>
         Full Stack Web Developer
       </Typography>
       <Typography variant="body1">
@@ -40,7 +40,7 @@ export default function AboutSection() {
         responsive, accessible, intuitive, and frustration-free websites with
         stylish designs.
       </Typography>
-      <Typography variant="body2">
+      <Typography variant="body1" sx={{ color: 'text.secondary' }}>
         Constantly self-improving by absorbing the latest software technology
         and techniques.
       </Typography>

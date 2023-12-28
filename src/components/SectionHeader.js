@@ -1,8 +1,6 @@
-import { Box, Typography, useTheme } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 export default function SectionHeader({ children }) {
-  const theme = useTheme();
-
   return (
     <Box
       sx={{
@@ -16,20 +14,17 @@ export default function SectionHeader({ children }) {
         sx={{
           width: '10%',
           height: '1px',
-          backgroundColor: theme.palette.secondary.main,
+          bgcolor: 'secondary.main',
         }}
       ></Box>
-      <Typography
-        variant="h4"
-        sx={{ color: theme.palette.primary.main, mx: 2 }}
-      >
+      <Typography variant="h4" sx={{ mx: 2, color: 'primary.main' }}>
         {children}
       </Typography>
       <Box
         sx={{
           width: '90%',
           height: '1px',
-          backgroundColor: theme.palette.secondary.main,
+          bgcolor: 'secondary.main',
         }}
       ></Box>
     </Box>

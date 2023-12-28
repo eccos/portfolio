@@ -2,17 +2,16 @@ import {
   Card,
   CardActionArea,
   CardContent,
+  CardHeader,
   CardMedia,
   Grid,
   Typography,
-  useTheme,
 } from '@mui/material';
 import { PROJECTS } from '../app/shared/PROJECTS';
 import SectionHeader from '../components/SectionHeader';
 
 export default function ProjectsSection({ label }) {
   const projects = PROJECTS;
-  const theme = useTheme();
 
   return (
     <>
@@ -20,27 +19,35 @@ export default function ProjectsSection({ label }) {
       <Grid container spacing={2}>
         {projects.map((project) => (
           <Grid key={project.id} item xs="12" sm="6" lg="4">
-            <Card sx={{ minWidth: 275, height: '100%' }} variant="outlined">
+            <Card
+              variant="outlined"
+              sx={{
+                minWidth: 275,
+                height: '100%',
+                borderColor: 'secondary.main',
+              }}
+            >
               <CardActionArea href={project.githubUrl} sx={{ height: '100%' }}>
                 <CardMedia
                   component="img"
                   image={project.img}
                   alt={project.title}
                 />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    color={theme.palette.secondary.main}
-                    borderBottom={1}
-                    borderColor={theme.palette.primary.main}
-                  >
-                    {project.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {project.descShort}
-                  </Typography>
+                <CardHeader
+                  title={project.title}
+                  sx={{
+                    color: 'secondary.dark',
+                    borderBottom: 1,
+                    borderColor: 'primary.main',
+                  }}
+                />
+                <CardContent
+                  sx={{
+                    color: 'text.secondary',
+                    height: '100%',
+                  }}
+                >
+                  <Typography variant="body2">{project.descShort}</Typography>
                 </CardContent>
               </CardActionArea>
             </Card>

@@ -7,6 +7,7 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from '@mui/lab';
+import { Typography } from '@mui/material';
 import SectionHeader from '../components/SectionHeader';
 
 export default function ExperienceSection({ label }) {
@@ -17,11 +18,13 @@ export default function ExperienceSection({ label }) {
         {employmentData.map((data, i) => (
           <TimelineItem key={i}>
             <TimelineOppositeContent>
-              {data.dateStart} - {data.dateEnd} 📅
-              <br />
-              {data.position} 💻
-              <br />
-              {data.employer} 🏢
+              <Typography color={i % 2 === 0 ? 'primary' : 'secondary'}>
+                {data.position} 💻
+              </Typography>
+              <Typography>
+                {data.dateStart} - {data.dateEnd} 📅
+              </Typography>
+              <Typography color="text.secondary">{data.employer} 🏢</Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot
@@ -30,9 +33,7 @@ export default function ExperienceSection({ label }) {
               />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent color="text.secondary">
-              🛠 {data.skills.join(', ')}
-            </TimelineContent>
+            <TimelineContent>🛠 {data.skills.join(', ')}</TimelineContent>
           </TimelineItem>
         ))}
       </Timeline>
