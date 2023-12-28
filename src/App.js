@@ -1,5 +1,6 @@
 import { Container, useMediaQuery, useTheme } from '@mui/material';
 import './styles.css';
+import { motion } from 'framer-motion';
 
 import FixedBottomNavigation from './FixedBottomNavigation';
 import FixedTopNav from './FixedTopNav';
@@ -37,7 +38,7 @@ export default function App() {
         disableGutters={isSmallScreen ? true : false}
       >
         {sections.map((section) => (
-          <section
+          <motion.section
             key={section.label}
             id={section.label}
             style={{
@@ -50,9 +51,12 @@ export default function App() {
               paddingRight: 10,
               borderRadius: 5,
             }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
           >
             <section.Component label={section.label} />
-          </section>
+          </motion.section>
         ))}
       </Container>
       {isSmallScreen && <FixedBottomNavigation sections={sections} />}

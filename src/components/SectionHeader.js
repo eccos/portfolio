@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
 
 export default function SectionHeader({ children }) {
   return (
@@ -15,10 +16,18 @@ export default function SectionHeader({ children }) {
           height: 10,
           bgcolor: 'secondary.main',
         }}
-      ></Box>
+        component={motion.div}
+        initial={{ x: '-90%', opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      />
       <Typography
         variant="h4"
         sx={{ marginLeft: 2, marginRight: 2, color: 'primary.main' }}
+        component={motion.div}
+        initial={{ rotateX: 0, opacity: 0 }}
+        whileInView={{ rotateX: [90, -90, 0], opacity: 1 }}
+        transition={{ delay: 0.2 }}
       >
         {children}
       </Typography>
@@ -28,7 +37,11 @@ export default function SectionHeader({ children }) {
           height: 10,
           bgcolor: 'secondary.main',
         }}
-      ></Box>
+        component={motion.div}
+        initial={{ x: '90%', opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      />
     </Box>
   );
 }

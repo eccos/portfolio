@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, Chip, Grid } from '@mui/material';
 import SectionHeader from '../components/SectionHeader';
+import { motion } from 'framer-motion';
 
 import { ReactComponent as JsIcon } from '../app/assets/img/techLogos/logo-js.svg';
 import { ReactComponent as HtmlIcon } from '../app/assets/img/techLogos/logo-html5.svg';
@@ -23,7 +24,16 @@ export default function SkillsSection({ label }) {
       <Grid container>
         {skills.map((skill) => (
           <Grid key={skill.name} item xs={12} sm={6} lg={4}>
-            <Card variant="outlined" sx={{ minWidth: 275, height: '100%' }}>
+            <Card
+              variant="outlined"
+              sx={{ minWidth: 275, height: '100%' }}
+              component={motion.div}
+              initial={{ borderRadius: '50%', opacity: 0 }}
+              whileInView={{
+                borderRadius: ['50%', '0'],
+                opacity: 1,
+              }}
+            >
               <CardHeader
                 title={skill.name}
                 sx={{ bgcolor: 'secondary.main' }}
@@ -47,6 +57,10 @@ export default function SkillsSection({ label }) {
                         height: 20,
                       },
                     }}
+                    component={motion.div}
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.2 }}
                   />
                 ))}
               </CardContent>
