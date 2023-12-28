@@ -18,7 +18,7 @@ export default function ProjectsSection({ label }) {
       <SectionHeader>{label}</SectionHeader>
       <Grid container spacing={2}>
         {projects.map((project) => (
-          <Grid key={project.id} item xs="12" sm="6" lg="4">
+          <Grid key={project.id} item xs={12} sm={6} lg={4}>
             <Card
               variant="outlined"
               sx={{

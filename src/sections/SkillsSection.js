@@ -22,7 +22,7 @@ export default function SkillsSection({ label }) {
       <SectionHeader>{label}</SectionHeader>
       <Grid container>
         {skills.map((skill) => (
-          <Grid key={skill.name} item xs="12" sm="6" lg="4">
+          <Grid key={skill.name} item xs={12} sm={6} lg={4}>
             <Card variant="outlined" sx={{ minWidth: 275, height: '100%' }}>
               <CardHeader
                 title={skill.name}
