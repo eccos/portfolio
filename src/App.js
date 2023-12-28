@@ -13,6 +13,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import WebIcon from '@mui/icons-material/Web';
 
+import background from './app/assets/img/pexels-ave-calvar-martinez-4279017.jpg';
+
 import { Container, useMediaQuery, useTheme } from '@mui/material';
 
 const sections = [
@@ -28,9 +30,13 @@ export default function App() {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <>
+    <div style={{ backgroundImage: `url(${background})` }}>
       {!isSmallScreen && <FixedTopNav sections={sections} />}
-      <Container id="sections-container" my={5}>
+      <Container
+        id="sections-container"
+        my={5}
+        sx={{ bgcolor: 'rgba(255, 255, 255, 0.85)' }}
+      >
         {sections.map((section) => (
           <section key={section.label} id={section.label}>
             <section.Component label={section.label} />
@@ -38,6 +44,6 @@ export default function App() {
         ))}
       </Container>
       {isSmallScreen && <FixedBottomNavigation sections={sections} />}
-    </>
+    </div>
   );
 }
