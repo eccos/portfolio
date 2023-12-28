@@ -6,14 +6,15 @@ import LinkedInLogo from '../app/assets/img/techLogos/logo-linkedin.png';
 export default function AboutSection() {
   return (
     <>
-      <Stack direction={'row'} spacing={2} mt={5}>
+      <Stack direction={'row'} spacing={2}>
         <Typography
           variant="h3"
           sx={{
             alignSelf: 'end',
             color: 'primary.main',
-            borderBottom: 1,
-            borderColor: 'secondary.main',
+            borderBottomColor: 'secondary.main',
+            borderBottomWidth: '10px',
+            borderBottomStyle: 'solid',
           }}
         >
           Luis Delamora
