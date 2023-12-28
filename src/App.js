@@ -1,3 +1,6 @@
+import { Container, useMediaQuery, useTheme } from '@mui/material';
+import './styles.css';
+
 import FixedBottomNavigation from './FixedBottomNavigation';
 import FixedTopNav from './FixedTopNav';
 
@@ -13,10 +16,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import WebIcon from '@mui/icons-material/Web';
 
-import background from './app/assets/img/pexels-ave-calvar-martinez-4279017.jpg';
-
-import { Container, useMediaQuery, useTheme } from '@mui/material';
-
 const sections = [
   { label: 'About', Component: AboutSection, icon: <HomeIcon /> },
   { label: 'Skills', Component: SkillsSection, icon: <HandymanIcon /> },
@@ -30,20 +29,33 @@ export default function App() {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <div style={{ backgroundImage: `url(${background})` }}>
+    <>
       {!isSmallScreen && <FixedTopNav sections={sections} />}
       <Container
         id="sections-container"
         my={5}
-        sx={{ bgcolor: 'rgba(255, 255, 255, 0.85)' }}
+        disableGutters={isSmallScreen ? true : false}
       >
         {sections.map((section) => (
-          <section key={section.label} id={section.label}>
+          <section
+            key={section.label}
+            id={section.label}
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              marginTop: 50,
+              marginBottom: 50,
+              paddingTop: 50,
+              paddingBottom: 50,
+              paddingLeft: 10,
+              paddingRight: 10,
+              borderRadius: 5,
+            }}
+          >
             <section.Component label={section.label} />
           </section>
         ))}
       </Container>
       {isSmallScreen && <FixedBottomNavigation sections={sections} />}
-    </div>
+    </>
   );
 }
