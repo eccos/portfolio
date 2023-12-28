@@ -1,6 +1,7 @@
 import { Link, Paper, Stack } from '@mui/material';
 import { CERTS } from '../app/shared/CERTS';
 import SectionHeader from '../components/SectionHeader';
+import { motion } from 'framer-motion';
 
 export default function EducationSection({ label }) {
   const certs = CERTS;
@@ -12,11 +13,18 @@ export default function EducationSection({ label }) {
         <Stack direction="row" spacing={2} overflow={'auto'}>
           {certs.map((cert) => (
             <Link key={cert.img} href={cert.pdf} target="_blank">
-              <img
+              <motion.img
                 src={cert.img}
                 alt={cert.title}
                 loading="lazy"
                 style={{ width: 200 }}
+                initial={{ x: 100, rotateZ: 0, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                whileHover={{
+                  rotateZ: [-2, 2, -2, 2, 0],
+                  transition: { duration: 0.5 },
+                }}
+                viewport={{ once: true }}
               />
             </Link>
           ))}

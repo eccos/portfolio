@@ -9,6 +9,7 @@ import {
 } from '@mui/lab';
 import { Typography } from '@mui/material';
 import SectionHeader from '../components/SectionHeader';
+import { motion } from 'framer-motion';
 
 export default function ExperienceSection({ label }) {
   return (
@@ -17,7 +18,13 @@ export default function ExperienceSection({ label }) {
       <Timeline>
         {employmentData.map((data, i) => (
           <TimelineItem key={i}>
-            <TimelineOppositeContent>
+            <TimelineOppositeContent
+              component={motion.div}
+              initial={{ opacity: 0, rotate: -45 }}
+              whileInView={{ opacity: 1, rotate: 0 }}
+              transition={{ delay: 0.5 }}
+              viewport={{ once: true }}
+            >
               <Typography color={i % 2 === 0 ? 'primary' : 'secondary'}>
                 {data.position} 💻
               </Typography>
@@ -33,7 +40,15 @@ export default function ExperienceSection({ label }) {
               />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>🛠 {data.skills.join(', ')}</TimelineContent>
+            <TimelineContent
+              component={motion.div}
+              initial={{ opacity: 0, rotate: 45 }}
+              whileInView={{ opacity: 1, rotate: 0 }}
+              transition={{ delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              🛠 {data.skills.join(', ')}
+            </TimelineContent>
           </TimelineItem>
         ))}
       </Timeline>

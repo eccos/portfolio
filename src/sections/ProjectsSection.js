@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import { PROJECTS } from '../app/shared/PROJECTS';
 import SectionHeader from '../components/SectionHeader';
+import { motion } from 'framer-motion';
 
 export default function ProjectsSection({ label }) {
   const projects = PROJECTS;
@@ -26,7 +27,15 @@ export default function ProjectsSection({ label }) {
                 borderColor: 'secondary.main',
               }}
             >
-              <CardActionArea href={project.githubUrl} sx={{ height: '100%' }}>
+              <CardActionArea
+                href={project.githubUrl}
+                sx={{ height: '100%' }}
+                component={motion.div}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.1 }}
+                viewport={{ once: true }}
+              >
                 <CardMedia
                   component="img"
                   image={project.img}

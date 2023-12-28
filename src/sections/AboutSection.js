@@ -9,7 +9,7 @@ export default function AboutSection() {
     initial: { x: 100, rotateZ: 0, opacity: 0 },
     slide: { x: 0, opacity: 1 },
     shake: {
-      rotateZ: [-20, 20, -20, 20, 0],
+      rotateZ: [-15, 15, -15, 15, 0],
       scale: 1.2,
       transition: { duration: 0.5 },
     },
@@ -30,6 +30,7 @@ export default function AboutSection() {
           component={motion.div}
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
         >
           Luis Delamora
         </Typography>
@@ -44,6 +45,7 @@ export default function AboutSection() {
               whileInView="slide"
               whileHover="shake"
               variants={logo}
+              viewport={{ once: true }}
             />
           </Link>
           <Link href="https://github.com/eccos">
@@ -56,6 +58,7 @@ export default function AboutSection() {
               whileInView="slide"
               whileHover="shake"
               variants={logo}
+              viewport={{ once: true }}
             />
           </Link>
         </Stack>
@@ -66,6 +69,7 @@ export default function AboutSection() {
         component={motion.div}
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
       >
         Full Stack Web Developer
       </Typography>
@@ -74,6 +78,7 @@ export default function AboutSection() {
         component={motion.div}
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
       >
         Over 5 years of experience in front-end & back-end technologies creating
         responsive, accessible, intuitive, and frustration-free websites with
@@ -85,6 +90,7 @@ export default function AboutSection() {
         component={motion.div}
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
       >
         Constantly self-improving by absorbing the latest software technology
         and techniques.

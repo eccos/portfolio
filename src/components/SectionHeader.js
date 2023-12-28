@@ -8,6 +8,7 @@ export default function SectionHeader({ children }) {
         display: 'flex',
         alignItems: 'center',
         marginBottom: 3,
+        overflow: 'hidden',
       }}
     >
       <Box
@@ -20,6 +21,7 @@ export default function SectionHeader({ children }) {
         initial={{ x: '-90%', opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
       />
       <Typography
         variant="h4"
@@ -28,6 +30,7 @@ export default function SectionHeader({ children }) {
         initial={{ rotateX: 0, opacity: 0 }}
         whileInView={{ rotateX: [90, -90, 0], opacity: 1 }}
         transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
       >
         {children}
       </Typography>
@@ -41,6 +44,7 @@ export default function SectionHeader({ children }) {
         initial={{ x: '90%', opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
       />
     </Box>
   );

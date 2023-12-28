@@ -24,16 +24,7 @@ export default function SkillsSection({ label }) {
       <Grid container>
         {skills.map((skill) => (
           <Grid key={skill.name} item xs={12} sm={6} lg={4}>
-            <Card
-              variant="outlined"
-              sx={{ minWidth: 275, height: '100%' }}
-              component={motion.div}
-              initial={{ borderRadius: '50%', opacity: 0 }}
-              whileInView={{
-                borderRadius: ['50%', '0'],
-                opacity: 1,
-              }}
-            >
+            <Card variant="outlined" sx={{ minWidth: 275, height: '100%' }}>
               <CardHeader
                 title={skill.name}
                 sx={{ bgcolor: 'secondary.main' }}
@@ -61,6 +52,7 @@ export default function SkillsSection({ label }) {
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
+                    viewport={{ once: true }}
                   />
                 ))}
               </CardContent>
