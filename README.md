@@ -21,3 +21,6 @@ Node 18 installed
 1. `npm start`
 
 Step 3 must always be done whenever node_modules is deleted or clean installed whether it's done manually, via `npm ci`, by deleting package-lock.json and running `npm i`, etc.
+
+## Known Issues
+- Top nav bar anchor points jump too far down sections. Possible solution is to hide the top nav bar when scrolling down or jumping to sections, and show it when scrolling up
