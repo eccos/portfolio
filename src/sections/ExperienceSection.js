@@ -15,7 +15,7 @@ export default function ExperienceSection({ label }) {
   return (
     <>
       <SectionHeader>{label}</SectionHeader>
-      <Timeline>
+      <Timeline sx={{ overflow: 'hidden' }}>
         {employmentData.map((data, i) => (
           <TimelineItem key={i}>
             <TimelineOppositeContent

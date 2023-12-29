@@ -6,8 +6,8 @@ import LinkedInLogo from '../app/assets/img/techLogos/logo-linkedin.png';
 
 export default function AboutSection() {
   const logo = {
-    initial: { x: 100, rotateZ: 0, opacity: 0 },
-    slide: { x: 0, opacity: 1 },
+    initial: { y: 100, rotateZ: 0, opacity: 0 },
+    slide: { y: 0, opacity: 1 },
     shake: {
       rotateZ: [-15, 15, -15, 15, 0],
       scale: 1.2,
