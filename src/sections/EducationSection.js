@@ -18,8 +18,8 @@ export default function EducationSection({ label }) {
                 alt={cert.title}
                 loading="lazy"
                 style={{ width: 200 }}
-                initial={{ x: 100, rotateZ: 0, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ rotateZ: 0, opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 whileHover={{
                   rotateZ: [-2, 2, -2, 2, 0],
                   transition: { duration: 0.5 },
