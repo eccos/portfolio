@@ -26,16 +26,13 @@ export default function ProjectsSection({ label }) {
                 height: '100%',
                 borderColor: 'secondary.main',
               }}
+              component={motion.div}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              viewport={{ once: true }}
             >
-              <CardActionArea
-                href={project.githubUrl}
-                sx={{ height: '100%' }}
-                component={motion.div}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.1 }}
-                viewport={{ once: true }}
-              >
+              <CardActionArea href={project.githubUrl} sx={{ height: '100%' }}>
                 <CardMedia
                   component="img"
                   image={project.img}
