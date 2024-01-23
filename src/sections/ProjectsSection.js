@@ -1,15 +1,15 @@
 import {
   Card,
-  CardActionArea,
   CardContent,
   CardHeader,
   CardMedia,
   Grid,
+  Link,
   Typography,
 } from '@mui/material';
+import { motion } from 'framer-motion';
 import { PROJECTS } from '../app/shared/PROJECTS';
 import SectionHeader from '../components/SectionHeader';
-import { motion } from 'framer-motion';
 
 export default function ProjectsSection({ label }) {
   const projects = PROJECTS;
@@ -32,29 +32,32 @@ export default function ProjectsSection({ label }) {
               transition={{ delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <CardActionArea href={project.githubUrl} sx={{ height: '100%' }}>
-                <CardMedia
-                  component="img"
-                  image={project.img}
-                  alt={project.title}
-                />
-                <CardHeader
-                  title={project.title}
-                  sx={{
-                    color: 'secondary.dark',
-                    borderBottom: 1,
-                    borderColor: 'primary.main',
-                  }}
-                />
-                <CardContent
-                  sx={{
-                    color: 'text.secondary',
-                    height: '100%',
-                  }}
-                >
-                  <Typography variant="body2">{project.descShort}</Typography>
-                </CardContent>
-              </CardActionArea>
+              <CardContent
+                sx={{
+                  color: 'text.secondary',
+                  height: '100%',
+                }}
+              >
+                <Link href={project.githubUrl}>
+                  <CardMedia
+                    component="img"
+                    image={project.img}
+                    alt={project.title}
+                    height="140"
+                  />
+                  <CardHeader
+                    title={project.title}
+                    sx={{
+                      color: 'secondary.dark',
+                      borderBottom: 1,
+                      borderColor: 'primary.main',
+                    }}
+                  />
+                </Link>
+                <Typography variant="body2" mt={2}>
+                  {project.descShort}
+                </Typography>
+              </CardContent>
             </Card>
           </Grid>
         ))}
