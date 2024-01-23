@@ -20,8 +20,8 @@ import WebIcon from '@mui/icons-material/Web';
 const sections = [
   { label: 'About', Component: AboutSection, icon: <HomeIcon /> },
   { label: 'Skills', Component: SkillsSection, icon: <HandymanIcon /> },
-  { label: 'Education', Component: EducationSection, icon: <SchoolIcon /> },
   { label: 'Projects', Component: ProjectsSection, icon: <WebIcon /> },
+  { label: 'Education', Component: EducationSection, icon: <SchoolIcon /> },
   { label: 'Experience', Component: ExperienceSection, icon: <BusinessIcon /> },
 ];
 
