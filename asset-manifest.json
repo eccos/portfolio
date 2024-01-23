@@ -1,18 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d7820ff4.css",
-    "main.js": "/portfolio/static/js/main.afd297b6.js",
+    "main.js": "/portfolio/static/js/main.59889267.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/pexels-ave-calvar-martinez-4279017.jpg": "/portfolio/static/media/pexels-ave-calvar-martinez-4279017.04fe04ac90deec30f1c7.jpg",
     "static/media/Simple News App.jpeg": "/portfolio/static/media/Simple News App.76c865146e90da5608d5.jpeg",
+    "static/media/Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_23050.pdf": "/portfolio/static/media/Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_23050.d53a05457f9d6fcff3c4.pdf",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.pdf": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.578c659c4903f907c766.pdf",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-JavaScript_Fundamentals_Course_Certificate_22005.pdf": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-JavaScript_Fundamentals_Course_Certificate_22005.bf63590078f7a7f2c9d3.pdf",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-React_Native_Course_Certificate_22830.pdf": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-React_Native_Course_Certificate_22830.1e0a3d3b8a52ab9063aa.pdf",
+    "static/media/Backend_with_NodeJS-NodeJS_Express_and_MongoDB_Course_Certificate_23049.pdf": "/portfolio/static/media/Backend_with_NodeJS-NodeJS_Express_and_MongoDB_Course_Certificate_23049.9cc1bacdb201f45e0445.pdf",
     "static/media/Dynamic_with_React-React_Course_Certificate_22760.pdf": "/portfolio/static/media/Dynamic_with_React-React_Course_Certificate_22760.c2bd8722caf84f3e070e.pdf",
     "static/media/AniList Date Updater.png": "/portfolio/static/media/AniList Date Updater.7fcffd309d5b0a0c198e.png",
     "static/media/PPI Calculator.png": "/portfolio/static/media/PPI Calculator.629b02a0fd2ad6d8edd6.png",
+    "static/media/Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_23050.jpg": "/portfolio/static/media/Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_23050.e69fb572f5e5b23b57e3.jpg",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.jpg": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_22829.767e05e00fb1968ae94f.jpg",
     "static/media/Wikipedia Bootstrap Rebuild.png": "/portfolio/static/media/Wikipedia Bootstrap Rebuild.777e6cdae4b08cc94902.png",
+    "static/media/Backend_with_NodeJS-NodeJS_Express_and_MongoDB_Course_Certificate_23049.jpg": "/portfolio/static/media/Backend_with_NodeJS-NodeJS_Express_and_MongoDB_Course_Certificate_23049.8cdef35d0df32a8558df.jpg",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-React_Native_Course_Certificate_22830.jpg": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-React_Native_Course_Certificate_22830.2e9bccac809723925bc9.jpg",
     "static/media/Dynamic_with_React-React_Course_Certificate_22760.jpg": "/portfolio/static/media/Dynamic_with_React-React_Course_Certificate_22760.75a8390e6daee90a6d2b.jpg",
     "static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-JavaScript_Fundamentals_Course_Certificate_22005.jpg": "/portfolio/static/media/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-JavaScript_Fundamentals_Course_Certificate_22005.fa8dbd9f6079758eb572.jpg",
@@ -87,11 +91,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/logo-html5.svg": "/portfolio/static/media/logo-html5.cf51b3879972e0e8c0c9be2135162847.svg",
     "main.d7820ff4.css.map": "/portfolio/static/css/main.d7820ff4.css.map",
-    "main.afd297b6.js.map": "/portfolio/static/js/main.afd297b6.js.map",
+    "main.59889267.js.map": "/portfolio/static/js/main.59889267.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7820ff4.css",
-    "static/js/main.afd297b6.js"
+    "static/js/main.59889267.js"
   ]
 }
