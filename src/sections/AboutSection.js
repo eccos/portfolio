@@ -80,9 +80,8 @@ export default function AboutSection() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
-        Over 5 years of experience in front-end & back-end technologies creating
-        responsive, accessible, intuitive, and frustration-free websites with
-        stylish designs.
+        Experienced web developer front-end and back-end expertise to supply
+        responsive, accessible, intuitive, and frustration-free websites.
       </Typography>
       <Typography
         variant="body1"
