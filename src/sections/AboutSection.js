@@ -80,17 +80,8 @@ export default function AboutSection() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
-        Experienced web developer front-end and back-end expertise to supply
-        responsive, accessible, intuitive, and frustration-free websites.
-      </Typography>
-      <Typography
-        variant="body1"
-        sx={{ color: 'text.secondary' }}
-        component={motion.div}
-        initial={{ y: -100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-      >
+        Experienced web developer with front-end and back-end expertise to
+        supply responsive, accessible, intuitive, and frustration-free websites.
         Constantly self-improving by absorbing the latest software technology
         and techniques.
       </Typography>
