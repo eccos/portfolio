@@ -23,7 +23,7 @@ export default function SkillsSection({ label }) {
       <SectionHeader>{label}</SectionHeader>
       <Grid container>
         {skills.map((skill) => (
-          <Grid key={skill.name} item xs={12} sm={6} lg={4}>
+          <Grid key={skill.name} item xs={12} lg={4}>
             <Card variant="outlined" sx={{ minWidth: 275, height: '100%' }}>
               <CardHeader
                 title={skill.name}
@@ -71,6 +71,15 @@ const skills = [
       { name: 'JavaScript', icon: <JsIcon /> },
       { name: 'HTML', icon: <HtmlIcon /> },
       { name: 'CSS', icon: <CssIcon /> },
+      { name: 'Bootstrap', icon: <BootstrapIcon /> },
+      { name: 'Material UI', icon: null },
+      { name: 'React.js', icon: <ReactIcon /> },
+      { name: 'Redux.js', icon: null },
+      { name: 'React Router', icon: null },
+      { name: 'React Native', icon: <ReactNativeIcon /> },
+      { name: 'React Navigation', icon: null },
+      { name: 'Expo', icon: null },
+      { name: 'Formik', icon: null },
     ],
     experience: 80,
   },
@@ -78,58 +87,31 @@ const skills = [
     name: 'Back-End',
     technologies: [
       { name: 'Node.js', icon: <NodeJsIcon /> },
+      { name: 'Express', icon: null },
+      { name: 'MongoDB', icon: null },
+      { name: 'Mongoose', icon: null },
+      { name: 'SQL', icon: null },
+      { name: 'Google Cloud & Firebase', icon: <GoogleCloudIcon /> },
       { name: 'ColdFusion', icon: null },
       { name: 'PHP', icon: null },
       { name: 'JSP', icon: null },
-      { name: 'Java', icon: null },
-      { name: 'C# .NET', icon: null },
     ],
     experience: 60,
-  },
-  {
-    name: 'Frameworks & Libraries',
-    technologies: [
-      { name: 'React.js', icon: <ReactIcon /> },
-      { name: 'React Native', icon: <ReactNativeIcon /> },
-      { name: 'Bootstrap/Reactstrap', icon: <BootstrapIcon /> },
-      { name: 'MUI (Material UI)', icon: null },
-      { name: 'React Router', icon: null },
-      { name: 'Redux.js', icon: null },
-      { name: 'Formik', icon: null },
-      { name: 'jQuery', icon: null },
-    ],
-    experience: 60,
-  },
-  {
-    name: 'Supporting Tech',
-    technologies: [
-      { name: 'Google Cloud & Firebase', icon: <GoogleCloudIcon /> },
-      { name: 'GitHub/Git', icon: <GitHubIcon /> },
-      { name: 'SQL', icon: null },
-      { name: 'Async API Calls (XML/JSON)', icon: null },
-      { name: 'AJAX', icon: null },
-    ],
-    experience: 70,
   },
   {
     name: 'Tools and Utilities',
     technologies: [
+      { name: 'Git', icon: null },
+      { name: 'GitHub', icon: <GitHubIcon /> },
+      { name: 'Postman', icon: null },
       { name: 'NPM', icon: null },
       { name: 'Jira', icon: null },
       { name: 'Jenkins', icon: null },
-      { name: 'Postman', icon: null },
-      { name: 'Windows/Unix CLI', icon: null },
-    ],
-    experience: 90,
-  },
-  {
-    name: 'Testing Automation',
-    technologies: [
       {
         name: 'Certified Tricentis Tosca Engineer Test Design and Automation Specialist (Nov 2021)',
         icon: null,
       },
     ],
-    experience: 80,
+    experience: 90,
   },
 ];
