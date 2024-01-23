@@ -31,7 +31,7 @@ export default function App() {
 
   return (
     <>
-      {!isSmallScreen && <FixedTopNav sections={sections} />}
+      {/* {!isSmallScreen && <FixedTopNav sections={sections} />} */}
       <Container
         id="sections-container"
         my={5}
