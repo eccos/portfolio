@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d7820ff4.css",
-    "main.js": "/portfolio/static/js/main.a21e728f.js",
+    "main.css": "/portfolio/static/css/main.7ade5bad.css",
+    "main.js": "/portfolio/static/js/main.85cee80a.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/pexels-ave-calvar-martinez-4279017.jpg": "/portfolio/static/media/pexels-ave-calvar-martinez-4279017.04fe04ac90deec30f1c7.jpg",
     "static/media/Simple News App.jpeg": "/portfolio/static/media/Simple News App.76c865146e90da5608d5.jpeg",
@@ -90,12 +90,12 @@
     "static/media/logo-bootstrap.svg": "/portfolio/static/media/logo-bootstrap.48565baa4c3a44417a6798093c5a85e7.svg",
     "index.html": "/portfolio/index.html",
     "static/media/logo-html5.svg": "/portfolio/static/media/logo-html5.cf51b3879972e0e8c0c9be2135162847.svg",
-    "main.d7820ff4.css.map": "/portfolio/static/css/main.d7820ff4.css.map",
-    "main.a21e728f.js.map": "/portfolio/static/js/main.a21e728f.js.map",
+    "main.7ade5bad.css.map": "/portfolio/static/css/main.7ade5bad.css.map",
+    "main.85cee80a.js.map": "/portfolio/static/js/main.85cee80a.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7820ff4.css",
-    "static/js/main.a21e728f.js"
+    "static/css/main.7ade5bad.css",
+    "static/js/main.85cee80a.js"
   ]
 }
